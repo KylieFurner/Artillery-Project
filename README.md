@@ -128,32 +128,49 @@ Geometry
 Since we are building a physics simulator, there are few equations we need to know:
 
 Name	Equation	Variables
+
 Degrees and Radians	r / 2 π = d / 360°	
+
 r = angle in radians
+
 π = pi, about 3.14159
+
 d = angle in degrees
+
 Vertical component of speed	dy = s cos(a)	
+
 dy = vertical component of speed (m/s)
+
 s = overall speed (m/s)
+
 a = direction of travel where 0 is pointing up (radians)
+
 Horizontal component of speed	dx = s sin(a)	
+
 dx = vertical component of speed (m/s)
+
 s = overall speed (m/s)
+
 a = direction of travel where 0 is pointing up (radians)
+
 Angle from components	a = atan(dx, dy)	
+
 a = directon of travel where 0 is pointing up (radians)
+
 dx = horizontal component of speed (m/s)
+
 dy = vertical component of speed (m/s)
+
 Pythagorean Theorem	dx2 + dy2 = s2	
+
 dx = horizontal component of speed (m/s)
+
 dy = vertical component of speed (m/s)
+
 s = overall speed (m/s)
+
 Linear Interpolation	
-(r - r0)
-(d - d0)
- = 
-(r1 - r0)
-(d1 - d0)
+(r - r0)(d - d0) = (r1 - r0)(d1 - d0)
 d0,r0 = coordinates of one point
 d1,r1 = coordinates of a second point
 d,r = coordinates of a point in the middle
